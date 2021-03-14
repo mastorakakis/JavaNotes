@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("ImplicitArrayToString")
 public class MainArrays {
 
+	@SuppressWarnings("UnusedAssignment")
 	public static void main(String[] args) {
 
 		int[] a = { 1, 2, 3 };
@@ -31,7 +33,7 @@ public class MainArrays {
 
 		System.out.println(stringList);
 		System.out.println(stringList2);
-		
+
 		a = Arrays.copyOf(a, 2 * a.length); 					// copy array and double the size
 	}
 }
